@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./style.css">
+  <script src="./app.js" defer></script>
+  
+  <title>Frontend Mentor | Intro section with dropdown navigation</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="navLogo-Container">
+      <img class="navLogo" src="./images/logo.svg">
+    </div>
+    <nav data-visible="false" class="navigation">
+
+      <div class="navContainer">
+
+        <div class="navigation-dropdown">
+
+          <a aria-expanded="false" id="dropDownToggle" class="navigation-dropdown-toggle" href="#">Features<img class="navigation-dropdown-toggle-icon featuresIcon" src="./images/icon-arrow-down.svg"></a>
+
+          <div data-down="false" class="navigation-dropdown-container Features">
+
+            <a class="navigation-dropdown-items" href="#"><img class="navigation-dropdown-items-icon" src="./images/icon-todo.svg"> List</a>
+            <a class="navigation-dropdown-items" href="#"><img class="navigation-dropdown-items-icon" src="./images/icon-calendar.svg">Calendar</a>
+            <a class="navigation-dropdown-items" href="#"><img class="navigation-dropdown-items-icon" src="./images/icon-reminders.svg">Reminders</a>
+            <a class="navigation-dropdown-items" href="#"><img class="navigation-dropdown-items-icon" src="./images/icon-planning.svg">Planning</a>
+          </div>
+        </div>
+  
+        <div class="navigation-dropdown">
+
+          <a aria-expanded="false" id="dropDownToggleCompany" class="navigation-dropdown-toggle" href="#">Company<img class="navigation-dropdown-toggle-icon companyIcon" src="./images/icon-arrow-down.svg"></a>
+
+          <div data-down2="false" class="navigation-dropdown-container Company">
+
+            <a class="navigation-dropdown-items" href="#">History</a>
+            <a class="navigation-dropdown-items" href="#">Our Team</a>
+            <a class="navigation-dropdown-items" href="#">Blog</a>
+          </div>
+        </div>
+  
+        <ul>
+          <li class="navigation-li"><a class="navigation-a" href="#">Careers</a></li>
+          <li class="navigation-li"><a class="navigation-a" href="#">About</a></li>
+        </ul>
+
+      </div>
+
+      <div class="navigation-btn-Container">
+        <button class="navigation-btn login">Login</button>
+        <button class="navigation-btn register">Register</button>
+      </div>
+
+    </nav>
+
+    <button aria-expanded="false" class="mobileNav-btn" id="toggle-btn"><img class="mobileNav-btn-icon" src="./images/icon-menu.svg"></button>
+
+  </header>
+
+  <div class="mainContainer">
+
+    
+    <div class="leftContent-Container">
+
+      <div class="textContainer">
+        <h1 class="textContainer-h1">Make<wbr> remote work</h1>
+        <p class="textContainer-p">Get your team in sync, no matter your location. Streamline processes, 
+          create team rituals, and watch productivity soar.</p>
+        <button class="textContainer-btn">Learn more</button>
+      </div>
+      
+      <div class="footer-img-Container">
+        <img class="footerImage" src="./images/client-databiz.svg">
+        <img class="footerImage" src="./images/client-audiophile.svg">
+        <img class="footerImage" src="./images/client-meet.svg">
+        <img class="footerImage" src="./images/client-maker.svg">
+      </div>
+      
+    </div>
+    
+    <div class="heroImg-container">
+      <img class="heroImg" id="heroImage" src="./images/image-hero-desktop.png">
+    </div>
+
+  </div>
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Kenneth Bacaltos</a>.
+  </div>
+</body>
+</html>
