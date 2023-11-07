@@ -1,6 +1,7 @@
 const navBtn = document.getElementById('toggle-btn');
 const nav = document.querySelector('.navigation');
 const navBtnIcon = document.querySelector('.mobileNav-btn-icon');
+const navBg = document.querySelector('.nav-bg');
 
 navBtn.addEventListener('click', () => {
     const visibility = nav.getAttribute('data-visible');
@@ -9,10 +10,12 @@ navBtn.addEventListener('click', () => {
         nav.setAttribute('data-visible', true);
         navBtn.setAttribute('aria-expanded', true);
         navBtnIcon.src = './images/icon-close-menu.svg';
+        navBg.style.display = "block"
     } else {
         nav.setAttribute('data-visible', false);
         navBtn.setAttribute('aria-expanded', false);
         navBtnIcon.src = './images/icon-menu.svg';
+        navBg.style.display = "none"
     }
 });
 
